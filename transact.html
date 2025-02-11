@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/transact.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+.hidden-date{
+   position: absolute;
+   transition: calc(-50%, -50%);
+   top: 20px;
+   display: none;
+}
+</style>
+  </head>
+<body>
+    <div id="header">
+
+    </div>
+    
+    <div class="transactions">
+    <div class="tab active" onclick="showTab(event, 'transactions')">Transactions</div>
+    <div class="tab" onclick="showTab(event, 'wallet')">Wallet Transaction</div>
+    <div class="tab" onclick="showTab(event, 'commission')">Commission Transaction</div>
+</div>
+
+<!-- Tab Content -->
+<div id="transactions" class="tab-content active">
+  <div class="all main">
+    <div style="margin-top: 5px;">
+        <div class="boxone">
+         <div class="img-container"  style="z-index: 1;"><img src="default-avatar.png"><span class="camera"><i class="fa-solid fa-camera"></i></span></div> 
+          <p>Hello, MUHAMMAD</p>
+          <a href="https://savings.kolomoni.ng/account/profile/index"><i class="fa-solid fa-pen-to-square"></i></a>
+      </div>
+      <div class="boxtwo">
+        <div style="padding: 20px 20px;">
+          <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textone">N0.00</p>
+        <p class="textwo">Available Account Balance</p>
+        </div>
+        <hr style="background-color: #f1f5f6;  height: 1.7px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="link">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank" class="draw">Withdraw</a>
+        <a href="https://savings.kolomoni.ng/account#" class="upp">TopUp</a>
+      </div>
+      </div>
+      </div>
+      <div class="boxthree">
+        <div style="padding: 20px 20px;">
+        <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textthree">N0.00</p>
+        <p class="textfour">Available Commission Balance</p>
+      </div>
+        <hr style="background-color: #f1f5f6;  height: 1.5px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="linktwo">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank">Transfer To Wallet</a>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div>
+
+    <div class="calender">
+     <input type="text" class="focus-blue" placeholder="Select a date" value="11/11/2024 - 12/10/2024" id="date-input" onclick="showdate()">
+     <span class="icon-inside" id="calender-icon" onclick="showdate()"><i class="fa-solid fa-calendar-days"></i></span>
+     <input type="date" class="hidden-date" id="hidden-date" onchange="sum()" style="display: block; position: absolute; top: 72%; z-index: -1; margin-left: 20px;">
+    <span><a href="https://savings.kolomoni.ng/account/transactions#allFilters">All Filters</a><i class="fas fa-sliders"></i></span> 
+       <span class="file"><i class="fas fa-file-download"></i><a href="https://savings.kolomoni.ng/account/transactions#">Download Statement</a></span> 
+    </div>
+  
+    <div class="filters">
+      <button class="one">Reset Filter</button>
+      <button class="two">Filter</button>
+    </div>
+    <div class="carrier">
+    <div class="Recent">
+      <p>All Transactions</p>
+      </div>
+      <div class="description">
+      <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Description</p>
+      </div>
+      <div class="date">
+        <P>Status</P>
+        <p>Amount</p>
+      </div>
+      </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+      <div class="no-recent">
+        <p>No recent transactions were found.</p>
+      </div>
+      <div class="View">
+        <p>Showing 1 to 10 of 0 entries</p>
+      </div>
+    </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div id="wallet" class="tab-content">
+  <div class="all main">
+    <div  style="margin-top: 5px;">
+        <div class="boxone">
+         <div class="img-container"  style="z-index: 1;"><img src="default-avatar.png"><span class="camera"><i class="fa-solid fa-camera"></i></span></div> 
+          <p>Hello, MUHAMMAD</p>
+          <a href="https://savings.kolomoni.ng/account/profile/index"><i class="fa-solid fa-pen-to-square"></i></a>
+      </div>
+      <div class="boxtwo">
+        <div style="padding: 20px 20px;">
+          <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textone">N0.00</p>
+        <p class="textwo">Available Account Balance</p>
+        </div>
+        <hr style="background-color: #f1f5f6;  height: 1px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="link">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank" class="draw">Withdraw</a>
+        <a href="https://savings.kolomoni.ng/account#" class="upp">TopUp</a>
+      </div>
+      </div>
+      </div>
+      <div class="boxthree">
+        <div style="padding: 20px 20px;">
+        <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textthree">N0.00</p>
+        <p class="textfour">Available Commission Balance</p>
+      </div>
+        <hr style="background-color: #f1f5f6;  height: 1px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="linktwo">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank">Transfer To Wallet</a>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div>
+
+      <div class="calender">
+        <input type="text" class="focus-blue" placeholder="Select a date" value="11/11/2024 - 12/10/2024" id="date-input" onclick="showdate()">
+        <span class="icon-inside" id="calender-icon" onclick="showdate()"><i class="fa-solid fa-calendar-days"></i></span>
+        <input type="date" class="hidden-date" id="hidden-date" onchange="sum()" style="display: block; position: absolute; top: 72%; z-index: -1;  margin-left: 20px;">
+       <span><a href="https://savings.kolomoni.ng/account/transactions#allFilters">All Filters</a><i class="fas fa-sliders"></i></span> 
+          <span class="file"><i class="fas fa-file-download"></i><a href="https://savings.kolomoni.ng/account/transactions#">Download Statement</a></span> 
+       </div>
+       
+    <div class="filters">
+      <button class="one">Reset Filter</button>
+      <button class="two">Filter</button>
+    </div>
+    <div class="Recent">
+      <p>All Transactions</p>
+      </div>
+      <div class="description">
+      <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Description</p>
+      </div>
+      <div class="date">
+        <P>Type</P>
+        <p>Amount</p>
+      </div>
+      </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+      <div class="no-recent">
+        <p>No recent transactions were found.</p>
+      </div>
+      <div class="View">
+        <p>Showing 1 to 10 of 0 entries</p>
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<div id="commission" class="tab-content">
+  <div class="all main">
+  
+    <div  style="margin-top: 5px;">
+        <div class="boxone">
+         <div class="img-container"   style="z-index: 1;"><img src="default-avatar.png"><span class="camera"><i class="fa-solid fa-camera"></i></span></div> 
+          <p>Hello, MUHAMMAD</p>
+          <a href="https://savings.kolomoni.ng/account/profile/index"><i class="fa-solid fa-pen-to-square"></i></a>
+      </div>
+      <div class="boxtwo">
+        <div style="padding: 20px 20px;">
+          <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textone">N0.00</p>
+        <p class="textwo">Available Account Balance</p>
+        </div>
+        <hr style="background-color: #f1f5f6;  height: 1px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="link">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank" class="draw">Withdraw</a>
+        <a href="https://savings.kolomoni.ng/account#" class="upp">TopUp</a>
+      </div>
+      </div>
+      </div>
+      <div class="boxthree">
+        <div style="padding: 20px 20px;">
+        <i class="fa-solid fa-wallet non-opa"></i>
+        <p class="textthree">N0.00</p>
+        <p class="textfour">Available Commission Balance</p>
+      </div>
+        <hr style="background-color: #f1f5f6;  height: 1px; border: none;">
+        <div style="padding: 5px 20px 20px 20px;">
+        <div class="linktwo">
+        <a href="https://savings.kolomoni.ng/account/services/transfers/wallet-to-bank">Transfer To Wallet</a>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div>
+
+      <div class="calender">
+        <input type="text" class="focus-blue" placeholder="Select a date" value="11/11/2024 - 12/10/2024" id="date-input" onclick="showdate()">
+        <span class="icon-inside" id="calender-icon" onclick="showdate()"><i class="fa-solid fa-calendar-days"></i></span>
+        <input type="date" class="hidden-date" id="hidden-date" onchange="sum()" style="display: block; position: absolute; top: 72%; z-index: -1;  margin-left: 20px;">
+       <span><a href="https://savings.kolomoni.ng/account/transactions#allFilters">All Filters</a><i class="fas fa-sliders"></i></span> 
+          <span class="file"><i class="fas fa-file-download"></i><a href="https://savings.kolomoni.ng/account/transactions#">Download Statement</a></span> 
+       </div>
+
+    <div class="filters">
+      <button class="one">Reset Filter</button>
+      <button class="two">Filter</button>
+    </div>
+    <div class="Recent">
+      <p>All Transactions</p>
+      </div>
+      <div class="description">
+      <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Description</p>
+      </div>
+      <div class="date type">
+        <P>Type</P>
+        <p>Amount</p>
+      </div>
+      </div>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+      <div class="no-recent">
+        <p>No recent transactions were found.</p>
+      </div>
+      <div class="View">
+        <p>Showing 1 to 10 of 0 entries</p>
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- JavaScript to Handle Tabs -->
+<script>
+    function showTab(event, tabName) {
+        // Hide all tab contents
+        let contents = document.getElementsByClassName("tab-content");
+        for (let i = 0; i < contents.length; i++)
+        { contents[i].classList.remove("active");
+        }
+        // Remove 'active' class from all tabs
+        let tabs = document.getElementsByClassName("tab");
+        for (let i = 0; i < tabs.length; i++) 
+        { tabs[i].classList.remove("active");
+        }
+
+        // Show the selected tab content and highlight the tab
+        document.getElementById(tabName).classList.add("active");
+        event.currentTarget.classList.add("active");
+    }
+</script>
+
+
+<script>
+  const dateInput = document.querySelectorAll(".focus-blue");
+  const calenderIcon = document.getElementById("calender-icon");
+  const hiddenDateInput = document.querySelectorAll(".hidden-date");
+   
+  dateInput.forEach((button,index) =>{
+     button.addEventListener('click', function(){
+      hiddenDateInput[index].showPicker();
+     })
+  })
+   
+hiddenDateInput.forEach((btn,indexs) =>{
+    btn.addEventListener('change', function(){
+      dateInput[indexs].value = hiddenDateInput[indexs].value;
+    })
+});
+
+
+
+  // function showdate(){
+  //   hiddenDateInput.showPicker();
+  // }
+  // function sum() {
+  //   dateInput.value = hiddenDateInput.value;
+  // }
+  // function sum() {
+  //   dateInput.value = hiddenDateInputtwo.value;
+  // }
+</script>
+
+    <div id="footer" style="background-color: white;">
+        
+    </div>
+</body>
+</html>
+<script src="dashboard.js">
+</script>

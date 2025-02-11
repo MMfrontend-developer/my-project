@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="css/loan.css">
+</head>
+<body>
+    <div id="header">
+
+    </div>   
+
+    <div class="loans">
+        <div class="tab active" onclick="showTab(event, 'Active')">Active</div>
+        <div class="tab" onclick="showTab(event, 'History')">History</div>
+        <div class="tab" onclick="showTab(event, 'Requests')">Requests</div>
+    </div>
+    
+    <div id="Active" class="tab-content active">  
+    <button>Request For Loan</button>
+    <div class="loan">
+    <p class="all">All Active Loans</p>
+    <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Amount</p>
+    </div>
+    <div class="balance">
+        <p>Balance</p>
+        <p>Type</p>
+    </div>
+    <div class="Liquidation">
+        <P>Liquidation</P>
+        <P>Status</P>
+    </div>
+    </div>
+    <div class="last">
+        <p>No recent loan requests were found. create one<span style="color:#FF7A00; font-weight: bold;" class="now"> Now</span>
+        </p>
+    </div>
+    <div class="empty"></div>
+  </div>
+</div>
+
+<div id="History"   class="tab-content">  
+    <button>Request For Loan</button>
+    <div class="loan">
+    <p class="all">All Liquidated Loans</p>
+    <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Amount</p>
+    </div>
+    <div class="balance">
+        <p>Balance</p>
+        <p>Type</p>
+    </div>
+    <div class="Liquidation">
+        <P>Liquidation</P>
+        <P>Status</P>
+    </div>
+    </div>
+    <div class="last">
+        <p>No recent loan requests were found. create one<span style="color:#FF7A00; font-weight: bold;" class="now"> Now</span>
+        </p>
+    </div>
+    <div class="empty"></div>
+  </div>
+</div>
+
+<div id="Requests"    class="tab-content">  
+    <button>Request For Loan</button>
+    <div class="loan">
+    <p class="all">All Loan Requests</p>
+    <div class="info">
+        <div class="date">
+        <p>Date</p>
+        <p>Amount</p>
+    </div>
+    <div class="balance">
+        <p>Balance</p>
+        <p>Type</p>
+    </div>
+    <div class="Liquidation">
+        <P>Liquidation</P>
+        <P>Status</P>
+    </div>
+    </div>
+    <div class="last">
+        <p>No recent loan requests were found. create one<span style="color:#FF7A00; font-weight: bold;" class="now"> Now</span>
+        </p>
+    </div>
+    <div class="empty"></div>
+  </div>
+</div>
+
+
+    <div id="footer" style="background-color: white;">
+        
+    </div>
+
+</body>
+</html>
+<script src="dashboard.js">
+</script>
+
+<script>
+function showTab(event, tabName) {
+let contents = document.getElementsByClassName('tab-content');
+for (let i = 0; i < contents.length; i++)
+ {contents[i].classList.remove('active')}; 
+
+ let tab = document.getElementsByClassName('tab');
+for (let i = 0; i < contents.length; i++)
+ {tab[i].classList.remove('active')}; 
+
+ document.getElementById(tabName).classList.add('active');
+ event.currentTarget.classList.add('active');
+}
+
+</script>
+
+
