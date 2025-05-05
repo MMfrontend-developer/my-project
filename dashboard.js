@@ -13,7 +13,7 @@
                 </div>
 
               <div id="nav_item"  class="nav-item">
-                <a href="dashboard.html" class="nav-link">DASHBOARD</a>
+                <a href="index.html" class="nav-link">DASHBOARD</a>
                 <a href="transact.html"  class="nav-link">TRANSACTIONS</a>
                 <a href="fund-request.html" class='nav-link'>FUND REQUESTS</a>
                 <div class="content">
