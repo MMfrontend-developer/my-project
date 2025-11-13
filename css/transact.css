@@ -448,7 +448,7 @@ font-family: " 14px Rubik", sans-serif;
      font-family: " 14px Rubik", sans-serif;
   }
   .boxone{
-   width: 250px;
+   width: 340px;
    height:220px;
    border-radius: 5px;
    background-color: white;
@@ -501,7 +501,7 @@ font-family: " 14px Rubik", sans-serif;
      color: #FF7A00; 
   }
   .boxtwo{
-   width: 87%;
+   width: 92%;
    height: fit-content;
    border-radius: 5px;
    background-color: white;
@@ -513,7 +513,7 @@ font-family: " 14px Rubik", sans-serif;
  }
   
  .boxthree{
-   width: 87%;
+   width: 92%;
    height: fit-content;
    border-radius: 5px;
    background-color: white;
@@ -656,7 +656,7 @@ font-family: " 14px Rubik", sans-serif;
      border-bottom: 1px solid  #f1f5f6;
      border-top-right-radius: 5px;
      border-top-left-radius: 5px;
-     width: 300px;
+     width: 380px;
      margin-left: 15px;
   }
   .Recent p {
@@ -678,7 +678,7 @@ font-family: " 14px Rubik", sans-serif;
      height: 40px;
      border-bottom: 5px solid  #f1f5f6;
      border-top: 5px solid  #f1f5f6;
-     width: 300px;
+     width: 380px;
      margin-left: 15px;
   }
   .date {
@@ -695,7 +695,7 @@ font-family: " 14px Rubik", sans-serif;
      /* box-shadow: 1px 1px 1px 1px rgb(242, 235, 235); */
      /* box-shadow: 1px 1px 10px 1px rgb(240, 230, 230); */
      border-top: 2px solid #f1f5f6;
-     width: 300px;
+     width: 380px;
      margin-left: 15px;
   }
   .no-recent P {
@@ -708,7 +708,7 @@ font-family: " 14px Rubik", sans-serif;
      background-color: #f1f5f6;
   }
   .View {
-     width: 300px;
+     width: 380px;
       margin-left: 15px;
      background-color: white;
      height: 70px;

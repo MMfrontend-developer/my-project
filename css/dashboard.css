@@ -468,7 +468,7 @@ text-decoration: underline;
       font-family: " 14px Rubik", sans-serif;
    }
     .boxone{
-      width: 250px;
+      width: 320px;
       height:220px;
       border-radius: 5px;
       background-color: white;
@@ -520,7 +520,7 @@ text-decoration: underline;
       color: #FF7A00; 
    }
     .boxtwo{
-      width: 88%;
+      width: 92%;
       height: fit-content;
       border-radius: 5px;
       background-color: white;
@@ -532,7 +532,7 @@ text-decoration: underline;
     }
    
     .boxthree{
-      width: 88%;
+      width: 92%;
       height: fit-content;
       border-radius: 5px;
       background-color: white;
@@ -567,7 +567,7 @@ text-decoration: underline;
    .rec {
       background-color: white;
       box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
-      width: 290px;
+      width: 360px;
       height: 110px;
    margin-bottom: 90px;
    border-radius: 5px;
@@ -604,7 +604,7 @@ text-decoration: underline;
       background-color: white;
       box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
       border-radius: 5px;
-      width: 310px;
+      width: 365px;
       height: 1050px;
       margin-left: 10px;
    }
@@ -699,7 +699,7 @@ text-decoration: underline;
       color: #FF7A00;
    }
    .boxfour {
-      width: 90%;
+      width: 92%;
       height: fit-content;
       margin-top: 40px;
       border-radius: 5px;
@@ -777,7 +777,7 @@ text-decoration: underline;
       height: 50px;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
-       width: 300px;
+       width: 360px;
        margin-left: 15px;
    }
 
@@ -798,7 +798,7 @@ text-decoration: underline;
       font-family: " 4px Rubik", sans-serif;
       font-size: 14px;
       opacity: 0.8;
-      width: 300px;
+      width: 360px;
       margin-left: 15px;
       height: 40px;
       border-bottom: 2px solid #f1f5f6;
@@ -815,7 +815,7 @@ text-decoration: underline;
       background-color: white;
       box-shadow: 1px 1px 1px 1px rgb(242, 235, 235);
       /* border-bottom: 1px solid #f1f5f6; */
-      width: 300px;
+      width: 360px;
       margin-left: 15px;
    }
    .no-recent P {
@@ -826,7 +826,7 @@ text-decoration: underline;
       background-color: #f1f5f6;
    }
    .View {
-      width: 300px;
+      width: 360px;
       margin-left: 15px;
       background-color: white;
       height: 45px;
