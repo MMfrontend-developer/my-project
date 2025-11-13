@@ -50,9 +50,10 @@ body {
   right: 15px;
   background-color: #FF7A00;
   color: white;
-  padding: 6px;
+  padding: 16px;
   border-radius: 50%;
   cursor: pointer;
+  font-size: 20px;
   transition: background-color 0.3s;
 }
 
@@ -653,7 +654,7 @@ font-family: " 14px Rubik", sans-serif;
      background-color: white;
      font-size: 20px;
      box-shadow: 1px 1px 1px 1px rgb(242, 235, 235);
-     height: 80px;
+     height: 50px;
      border-bottom: 1px solid  #f1f5f6;
      border-top-right-radius: 5px;
      border-top-left-radius: 5px;
