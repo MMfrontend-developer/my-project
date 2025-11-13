@@ -781,9 +781,9 @@ text-decoration: underline;
        margin-left: 15px;
    }
 
-   .all-recent{
+   /* .all-recent{
     width: 250px;
-   }
+   } */
    .Recent p {
       padding: 5px 10px;
    }

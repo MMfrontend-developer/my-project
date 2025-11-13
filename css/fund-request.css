@@ -132,7 +132,7 @@ input,  button {
   margin-top: 10px;
 }
 textarea {
-  width: 345px;
+  width: 340px;
     height: 150px;
     font-size: 17px;
     border: 1px solid #dae1e3;
@@ -147,7 +147,7 @@ textarea {
   padding: 20px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 330px;
   height: 580px;
   /* max-width: 550px; */
   margin-left: 10px;
