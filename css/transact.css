@@ -39,6 +39,27 @@ body {
    display: block;
 }
 
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-container i {
+  position: absolute;
+  bottom: 9px;
+  right: 15px;
+  background-color: #FF7A00;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.img-container i:hover {
+  background-color: #ee7403;
+}
+
 
 img {
    width: 90px;
@@ -358,6 +379,8 @@ font-family: " 14px Rubik", sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 10px;
+      width: 100%;
   }
   /* .transactions a{
       text-decoration: none;
@@ -369,7 +392,8 @@ font-family: " 14px Rubik", sans-serif;
   
   .tab {
      display: inline-block;
-     padding: 20px 20px;
+     padding: 15px 15px;
+     width: 100%;
      cursor: pointer;
      font-size: 16px;
      font-family: " 14px Rubik", sans-serif;
@@ -400,8 +424,8 @@ font-family: " 14px Rubik", sans-serif;
      position: absolute;
      font-size: 20px;
      transform: translate(-50%, -50%);
-     left: 59%;
-     top: 32%;
+     left: 58%;
+     top: 45%;
      border-radius: 50%;
      object-fit: contain;
      width: 40px;
@@ -424,13 +448,13 @@ font-family: " 14px Rubik", sans-serif;
      font-family: " 14px Rubik", sans-serif;
   }
   .boxone{
-   width: 340px;
+   width: 250px;
    height:220px;
    border-radius: 5px;
    background-color: white;
    box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
    padding: 20px 20px;
-   margin-top: 40px;
+   margin-top: 30px;
    margin-left: 15px;
    justify-content: center;
    text-align: center;
@@ -477,19 +501,19 @@ font-family: " 14px Rubik", sans-serif;
      color: #FF7A00; 
   }
   .boxtwo{
-   width: 93%;
+   width: 87%;
    height: fit-content;
    border-radius: 5px;
    background-color: white;
    box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
-   margin-top: 40px;
+   margin-top: 30px;
    margin-left: 15px;
    justify-content: center;
    text-align: center;
  }
   
  .boxthree{
-   width: 93%;
+   width: 87%;
    height: fit-content;
    border-radius: 5px;
    background-color: white;
@@ -532,7 +556,7 @@ font-family: " 14px Rubik", sans-serif;
   
   input[type='text']{
      margin-top: 25px;
-     width: 350px;
+     width: 260px;
      height: 50px;
      color: #656565;
      font-size: 15px;
@@ -550,7 +574,7 @@ font-family: " 14px Rubik", sans-serif;
   .icon-inside {
      position: absolute;
      left: 83.5%;
-     top: calc(123.5% - 11px);
+     top: calc(161.5% - 11px);
      pointer-events: none;
      /* font-size: 18px; */
      font-size: 1.125rem;
@@ -560,7 +584,7 @@ font-family: " 14px Rubik", sans-serif;
   .calender a{
      font-size: 14px;
      text-decoration: none;
-  margin-left: 25px;
+  margin-left: 13px;
   color: #FF7A00;
   font-family: " 14px Rubik", sans-serif;
   }
@@ -632,7 +656,7 @@ font-family: " 14px Rubik", sans-serif;
      border-bottom: 1px solid  #f1f5f6;
      border-top-right-radius: 5px;
      border-top-left-radius: 5px;
-     width: 380px;
+     width: 300px;
      margin-left: 15px;
   }
   .Recent p {
@@ -654,7 +678,7 @@ font-family: " 14px Rubik", sans-serif;
      height: 40px;
      border-bottom: 5px solid  #f1f5f6;
      border-top: 5px solid  #f1f5f6;
-     width: 380px;
+     width: 300px;
      margin-left: 15px;
   }
   .date {
@@ -671,7 +695,7 @@ font-family: " 14px Rubik", sans-serif;
      /* box-shadow: 1px 1px 1px 1px rgb(242, 235, 235); */
      /* box-shadow: 1px 1px 10px 1px rgb(240, 230, 230); */
      border-top: 2px solid #f1f5f6;
-     width: 380px;
+     width: 300px;
      margin-left: 15px;
   }
   .no-recent P {
@@ -684,7 +708,7 @@ font-family: " 14px Rubik", sans-serif;
      background-color: #f1f5f6;
   }
   .View {
-   width: 380px;
+     width: 300px;
       margin-left: 15px;
      background-color: white;
      height: 70px;

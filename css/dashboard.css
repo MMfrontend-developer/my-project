@@ -31,8 +31,26 @@ img {
    font-size: 20px;
 }
 .img-container {
-   position: relative;
+  position: relative;
+  display: inline-block;
 }
+
+.img-container i {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  background-color: #ff7A00;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.img-container i:hover {
+  background-color: #ee7403;
+}
+
 .boxone p {
    color: #4C4D4D;
    font-weight: 600;
@@ -425,7 +443,7 @@ text-decoration: underline;
       font-size: 20px;
       transform: translate(-50%, -50%);
       left: 59%;
-      top: 23%;
+      /* top: 23%; */
       border-radius: 50%;
       object-fit: contain;
       width: 40px;
@@ -450,7 +468,7 @@ text-decoration: underline;
       font-family: " 14px Rubik", sans-serif;
    }
     .boxone{
-      width: 340px;
+      width: 250px;
       height:220px;
       border-radius: 5px;
       background-color: white;
@@ -502,7 +520,7 @@ text-decoration: underline;
       color: #FF7A00; 
    }
     .boxtwo{
-      width: 93%;
+      width: 88%;
       height: fit-content;
       border-radius: 5px;
       background-color: white;
@@ -514,7 +532,7 @@ text-decoration: underline;
     }
    
     .boxthree{
-      width: 93%;
+      width: 88%;
       height: fit-content;
       border-radius: 5px;
       background-color: white;
@@ -549,7 +567,7 @@ text-decoration: underline;
    .rec {
       background-color: white;
       box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
-      width: 380px;
+      width: 290px;
       height: 110px;
    margin-bottom: 90px;
    border-radius: 5px;
@@ -586,9 +604,9 @@ text-decoration: underline;
       background-color: white;
       box-shadow: 2px 2px 2px 2px rgb(240, 230, 230);
       border-radius: 5px;
-      width: 380px;
+      width: 310px;
       height: 1050px;
-      margin-left: 15px;
+      margin-left: 10px;
    }
    .progress .profile{
    border-bottom: 1px solid rgb(215, 207, 207);
@@ -759,14 +777,18 @@ text-decoration: underline;
       height: 50px;
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
-       width: 380px;
+       width: 300px;
        margin-left: 15px;
+   }
+
+   .all-recent{
+    width: 250px;
    }
    .Recent p {
       padding: 5px 10px;
    }
    .info {
-      width: 50%;
+      width: 20%;
       display: flex;
       justify-content: space-between;
     
@@ -776,7 +798,7 @@ text-decoration: underline;
       font-family: " 4px Rubik", sans-serif;
       font-size: 14px;
       opacity: 0.8;
-      width: 380px;
+      width: 300px;
       margin-left: 15px;
       height: 40px;
       border-bottom: 2px solid #f1f5f6;
@@ -793,7 +815,7 @@ text-decoration: underline;
       background-color: white;
       box-shadow: 1px 1px 1px 1px rgb(242, 235, 235);
       /* border-bottom: 1px solid #f1f5f6; */
-      width: 380px;
+      width: 300px;
       margin-left: 15px;
    }
    .no-recent P {
@@ -804,7 +826,7 @@ text-decoration: underline;
       background-color: #f1f5f6;
    }
    .View {
-      width: 380px;
+      width: 300px;
       margin-left: 15px;
       background-color: white;
       height: 45px;
